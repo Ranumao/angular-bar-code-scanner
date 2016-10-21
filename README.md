@@ -44,7 +44,7 @@ Now your application is able to detect scan. Just catch the scan event by listen
 angular.module('myApp').controller('MyController', function($scope){
     $scope.$on('bar-code-scan-event',function(event, parameters){
         console.info('Scan detected, bar code is : ' , parameters.barCodeValue);
-    }
+    });
 });
 ```
 
